@@ -1,6 +1,6 @@
 local aliveCheck = function(player)
 	if player ~= lplr then 
-		if player.leaderstats.Bed.Value ~= '✅' and player.Character.Humanoid and player.Character:WaitForChild('Humanoid').Health == 0 then return false else return nil end
+		if player.leaderstats.Bed.Value ~= '✅' and player.Character.Humanoid and player.Character:WaitForChild('Humanoid').Health == 0 then return false end
 	end
 	if player.Character.Humanoid then
 		return player.Character.Humanoid.Health ~= 0
